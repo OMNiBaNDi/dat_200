@@ -43,7 +43,10 @@ def n_queens(n):
     board = [["." for _ in range(n)] for _ in range(n)] # board initialization
     solutions = [] #keep track of solutions
     find_solutions(0, board, solutions)
+
+    if len(solutions) == 0:
+        return "No possible solutions"
     return solutions
 
 #Test
-print(n_queens(5))
+print(n_queens(4))
