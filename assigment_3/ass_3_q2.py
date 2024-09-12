@@ -30,7 +30,7 @@ def n_queens(n):
         #Base case of recursion checks if all n rows of the board has been processed
         if row == n:
             #all rows have been processed and we can append this solution to solutions
-            solutions.append(["".join(row) for row in board])
+            solutions.append("\n".join(["".join(row) for row in board]))
             return
 
         #Re
@@ -49,4 +49,5 @@ def n_queens(n):
     return solutions
 
 #Test
-print(n_queens(4))
+for solution in n_queens(4):
+    print(solution,end="\n\n")
