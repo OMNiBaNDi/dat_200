@@ -1,4 +1,13 @@
+"""
+Selection sort works on the idea of repeatedly finding the smallest element and placing it at its
+correct position.
 
+Works by dividing the list into two sublists:
+- Sorted sublist that is built on the left(initially empty)
+- Unsorted sublist - that is the rest of the unsorted list on the right end.
+
+Time complexity is best = average = worst case : O(n^2)
+"""
 
 #Iterative solution to selectionSort
 
